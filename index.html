@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打砖块</title>
+    <link rel="stylesheet" href="src/myclass.css">
+    <script src="src/jquery-3.4.1.js"></script>
+    <script src="src/app.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <div id="box">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div id="bubble"></div>
+            <div id="board"></div>
+        </div>
+        <div id="res">
+            <hgroup>
+                <h2>游戏信息</h2>
+                <hr>
+            </hgroup>
+            <hgroup>
+                <h3>游戏时间</h3>
+                <p id="time">00:00</p>
+                <hr>
+            </hgroup>
+            <hgroup>
+                <h3>弹小球次数</h3>
+                <p id="num">0</p>
+                <hr>
+            </hgroup>
+            <hgroup>
+                <h3>得分</h3>
+                <p id="score">0</p>
+                <hr>
+            </hgroup>
+            <hgroup>
+                <h3>游戏状态</h3>
+                <p id="state">准备中</p>
+            </hgroup>
+        </div>
+        <button id="start">开始游戏</button>
+    </div>
+</body>
+<script>
+    var bb = new BtB();
+    bb.init();
+    //开始
+    $("start").onclick = function () {
+        $("state").innerHTML = "游戏中";
+        bb.keydown();
+        bb.move();
+        bb.gettime();
+    }
+</script>
+</html>
